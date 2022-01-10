@@ -1,9 +1,9 @@
 import 'package:ebutler/Screens/OrderListScreen/receiver_screen.dart';
+import 'package:ebutler/Screens/OrderListScreen/status_screen.dart';
 import 'package:ebutler/Screens/product_screen.dart';
 import 'package:ebutler/Screens/user_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,27 +16,40 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key key}) : super(key: key);
-  
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.blue[900],
-            title: Text("Binus Hotel", style: TextStyle(fontWeight: FontWeight.bold),),
-            actions: <Widget> [
+            title: Text(
+              "Binus Hotel",
+              style: TextStyle(fontWeight: FontWeight.bold),
+            ),
+            actions: <Widget>[
               IconButton(
-                icon: Icon(Icons.search, color: Colors.white,),
+                icon: Icon(
+                  Icons.search,
+                  color: Colors.white,
+                ),
               ),
             ],
             bottom: TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.list), text: 'ORDER'),
-                Tab(icon: Icon(Icons.list), text: 'PRODUCT',),
-                Tab(icon: Icon(Icons.people), text: 'USER',),
+                Tab(icon: Icon(Icons.update), text: 'ORDER STATUS'),
+                Tab(
+                  icon: Icon(Icons.list),
+                  text: 'PRODUCT',
+                ),
+                Tab(
+                  icon: Icon(Icons.people),
+                  text: 'USER',
+                ),
               ],
               unselectedLabelColor: Colors.black,
             ),
@@ -44,6 +57,7 @@ class MyApp extends StatelessWidget {
           body: TabBarView(
             children: [
               Receiver(),
+              StatusScreen(),
               ProductScreen(),
               UserScreen(),
             ],

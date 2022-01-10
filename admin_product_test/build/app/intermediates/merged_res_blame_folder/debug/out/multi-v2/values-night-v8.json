@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\admin_product_test\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "D:\\Github\\fileTerbaru9January2022\\admin_product_test\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\admin_product_test\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "D:\\Github\\fileTerbaru9January2022\\admin_product_test\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
-                        "startOffsets": "172,815",
+                        "startOffsets": "175,829",
                         "endLines": "7,16",
                         "endColumns": "12,12",
-                        "endOffsets": "464,979"
+                        "endOffsets": "471,995"
                     },
                     "to": {
                         "startLines": "2,7",
